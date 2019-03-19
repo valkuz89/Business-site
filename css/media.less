@@ -1,0 +1,132 @@
+body {
+  @media (max-width: 1237px) {
+    .ourProcess {
+      padding: 40px 60px 10px 60px;
+      .steps {
+        height: auto;
+        background-image: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .step1, .step2, .step3, .step4 {
+          width: 200px;
+          margin-bottom: 20px;
+          position: inherit;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    section#receive {
+      padding: 20px 10px;
+
+      .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+          max-width: 350px;
+        }
+      }
+    }
+    section.expand {
+      padding: 50px 20px 10px 20px;
+      .frame_ramka {
+        min-height: 260px;
+        min-width: 260px;
+        margin: 0 auto 50px;
+        text-align: center;
+        h2 {
+          margin: 70px 0 20px 0;
+        }
+      }
+    }
+    .weDo1, .weDo2, .weDo3 {
+      padding: 50px 50px 15px 50px;
+    }
+    .team {
+      padding: 30px 20px 15px;
+      div {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .weDo1, .weDo2, .weDo3 {
+      padding: 40px 20px 10px 20px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .left {
+          margin: 0 auto;
+          text-align: center;
+          order: 2;
+        }
+        .right {
+          order: 1;
+          img {
+            max-width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) and (min-width: 550px) {
+    header {
+      nav {
+        flex-direction: column;
+        justify-content: center;
+        menu {
+          margin-top: 10px;
+        }
+      }
+      .mainText {
+        margin-top: 0;
+      }
+      a.arrowDown {
+        top: 0;
+      }
+    }
+  }
+  @media (max-width: 549px) {
+    header {
+      nav {
+        padding: 0 20px;
+        menu {
+          display: flex;
+          flex-direction: column;
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .mainText {
+        margin-top: -20px;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }
+      a.arrowDown {
+        top: 0;
+      }
+    }
+    section#receive {
+      p {
+        margin-bottom: 30px;
+      }
+      .icons p {
+        margin-bottom: 15px;
+      }
+    }
+    .team {
+      div .people h4 {
+        font-size: 22px;
+      }
+    }
+  }
+}

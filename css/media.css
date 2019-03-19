@@ -1,0 +1,137 @@
+@media (max-width: 1237px) {
+  body .ourProcess {
+    padding: 40px 60px 10px 60px;
+  }
+  body .ourProcess .steps {
+    height: auto;
+    background-image: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .ourProcess .steps .step1,
+  body .ourProcess .steps .step2,
+  body .ourProcess .steps .step3,
+  body .ourProcess .steps .step4 {
+    width: 200px;
+    margin-bottom: 20px;
+    position: inherit;
+  }
+}
+@media (max-width: 1200px) {
+  body section#receive {
+    padding: 20px 10px;
+  }
+  body section#receive .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body section#receive .icons div {
+    max-width: 350px;
+  }
+  body section.expand {
+    padding: 50px 20px 10px 20px;
+  }
+  body section.expand .frame_ramka {
+    min-height: 260px;
+    min-width: 260px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  body section.expand .frame_ramka h2 {
+    margin: 70px 0 20px 0;
+  }
+  body .weDo1,
+  body .weDo2,
+  body .weDo3 {
+    padding: 50px 50px 15px 50px;
+  }
+  body .team {
+    padding: 30px 20px 15px;
+  }
+  body .team div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  body .weDo1,
+  body .weDo2,
+  body .weDo3 {
+    padding: 40px 20px 10px 20px;
+  }
+  body .weDo1 .content,
+  body .weDo2 .content,
+  body .weDo3 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .weDo1 .content .left,
+  body .weDo2 .content .left,
+  body .weDo3 .content .left {
+    margin: 0 auto;
+    text-align: center;
+    order: 2;
+  }
+  body .weDo1 .content .right,
+  body .weDo2 .content .right,
+  body .weDo3 .content .right {
+    order: 1;
+  }
+  body .weDo1 .content .right img,
+  body .weDo2 .content .right img,
+  body .weDo3 .content .right img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body header nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body header nav menu {
+    margin-top: 10px;
+  }
+  body header .mainText {
+    margin-top: 0;
+  }
+  body header a.arrowDown {
+    top: 0;
+  }
+}
+@media (max-width: 549px) {
+  body header nav {
+    padding: 0 20px;
+  }
+  body header nav menu {
+    display: flex;
+    flex-direction: column;
+  }
+  body header nav menu li {
+    margin-bottom: 10px;
+  }
+  body header .mainText {
+    margin-top: -20px;
+  }
+  body header .mainText h2 {
+    font-size: 30px;
+  }
+  body header .mainText p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  body header a.arrowDown {
+    top: 0;
+  }
+  body section#receive p {
+    margin-bottom: 30px;
+  }
+  body section#receive .icons p {
+    margin-bottom: 15px;
+  }
+  body .team div .people h4 {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

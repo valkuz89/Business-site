@@ -1,0 +1,439 @@
+@red: #fc645f;
+@grey: #868686;
+.clA {
+
+}
+
+.clWidth {
+  width: 100%;
+  max-width: 1260px;
+}
+
+.clH1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+  span {
+    color: @red;
+  }
+}
+
+.clH2 {
+  width: fit-content;
+  padding-bottom: 7px;
+  font-size: 28px;
+  text-transform: uppercase;
+  border-bottom: 1px solid @grey;
+  span {
+    color: @red;
+  }
+}
+
+.four_steps {
+  width: 130px;
+  max-height: 110px;
+  position: relative;
+  h4 {
+    width: 80px;
+    padding-bottom: 5px;
+    margin: 0 auto 3px;
+    font-size: 24px;
+    border-bottom: 1px solid @grey;
+    span {
+      color: @red;
+    }
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.weDoContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  .left {
+    h3 {
+      margin-bottom: 30px;
+      padding: 0 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      top: 0;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .clWidth;
+  margin: 0 auto;
+  background: #524134;
+  a.arrowDown { //будем использовать в разных местах - поместили это вверху;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 40px;
+    width: 40px;
+    border: 1px solid @red;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: @red;
+    &:hover {
+      color: white;
+      background: @red;
+    }
+  }
+  a.btn {
+    position: relative;
+    top: 20px;
+    color: @red;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid @red;
+    padding: 5px 15px;
+    border-radius: 8px;
+    &:hover {
+      background: @red;
+      color: white;
+      font-weight: bolder;
+    }
+  }
+  header {
+    background: url("../img/background.png") no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    .clWidth;
+    justify-content: space-around;
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      >a{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        img {
+          padding-right: 15px;
+          vertical-align: middle;
+        }
+      }
+      .logo:hover img {
+        opacity: .7; //прозрачность
+      }
+      menu {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+        li {
+          padding-left: 25px;
+          a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            &:hover {
+              color: @red;
+              border-bottom: @red solid 3px;
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    .mainText {
+      margin-top: 80px;
+      text-align: center;
+      h2 {
+        .clH1;
+      }
+      p {
+        color: white;
+        font-size: 22px;
+      }
+    }
+    .botHeadder {
+       display: flex;
+       justify-content: center;
+       margin-top: 50px;
+    }
+  }
+  section#receive {
+    margin-top: 0;
+    text-align: center;
+    background: white;
+    padding: 60px 100px 20px 100px;
+    color: @grey;
+    h2 {
+      margin: 0 auto;
+      .clH2;
+    }
+    p {
+      margin: 10px auto 50px;
+      max-width: 530px;
+      font-size: 20px;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      h4 {
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      p {
+        margin-bottom: 45px;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+    }
+  }
+  section.expand {
+    max-height: 570px;
+    margin-top: 0;
+    padding: 90px 90px 10px 90px;
+    background: url("../img/expand.png") no-repeat;
+    text-align: center;
+    .frame_ramka {
+      height: 360px;
+      max-width: 920px;
+      margin: 0 auto 40px;
+      text-align: center;
+      border: 10px solid rgba(0,0,0,0.1);
+      h2 {
+        .clH1;
+        margin: 120px 0 50px 0;
+      }
+    }
+  }
+  .ourProcess {
+    text-align: center;
+    background: white;
+    padding: 40px 210px 15px 210px;
+    color: @grey;
+    h2 {
+      margin: 0 auto 20px;
+      .clH2;
+    }
+    .p_process {
+      max-width: 530px;
+      margin: 0 auto 35px;
+      font-size: 20px;
+    }
+    .steps {
+      height: 560px;
+      margin-bottom: 10px;
+      display: flex;
+      background: url("../img/Our_process1.png") no-repeat;
+      background-size: contain;
+      .step1 {
+        .four_steps;
+        top: 140px;
+        left: 50px;
+      }
+      .step2 {
+        .four_steps;
+        top: 190px;
+        left: 186px;
+      }
+      .step3 {
+        .four_steps;
+        top: 45px;
+        left: 140px;
+      }
+      .step4 {
+        .four_steps;
+        width: 200px;
+        top: 150px;
+        left: 184px;
+      }
+    }
+  }
+  .weDo1, .weDo3 {
+    padding: 50px 160px 15px 160px;
+    background: #f2f2f2;
+    color: @grey;
+    h2 {
+      margin: 0 auto 20px;
+      .clH2;
+    }
+    .content {
+      .weDoContent;
+      .left {
+        margin-right: 40px;
+        h3 {
+          border-left: 10px solid @red;
+        }
+      }
+    }
+  }
+  .weDo2 {
+    padding: 100px 160px 15px 160px;
+    background: white;
+    color: @grey;
+    .content {
+      .weDoContent;
+      .left {
+        order: 2;
+        text-align: right;
+        margin-left: 40px;
+        h3 {
+          border-right: 10px solid @red;
+        }
+      }
+      .right {
+        order: 1;
+      }
+    }
+  }
+  .weDo3 {
+    padding-top: 100px;
+  }
+  .portfolio {
+    padding: 50px 0 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    h2 {
+      margin-bottom: 40px;
+      color: @grey;
+      .clH2;
+    }
+    .control {
+      padding: 15px;
+      margin-bottom: 30px;
+      font-size: 25px;
+      text-align: center;
+      letter-spacing: 2px;
+      border-top: 3px solid darkgrey;
+      border-bottom: 3px solid darkgrey;
+      button {
+        color: @red;
+        width: inherit;
+        background: transparent;
+        border: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        &:hover, &:active {
+          color: white;
+          border-color: transparent;
+          cursor: pointer;//arm cursor when hover
+          font-weight: bold;
+          background: @red;
+        }
+      }
+    }
+    .container-filter {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      #ex1 {
+        background-image: url("../img/portfolio/1.png");
+      }
+      #ex2 {
+        background-image: url("../img/portfolio/2.png");
+      }
+      #ex3 {
+        background-image: url("../img/portfolio/3.png");
+      }
+      #ex4 {
+        background-image: url("../img/portfolio/4.png");
+      }
+      #ex5 {
+        background-image: url("../img/portfolio/5.png");
+      }
+      #ex6 {
+        background-image: url("../img/portfolio/6.png");
+      }
+      div {
+        background-size: cover;//Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
+        background-position: center center;
+        margin: 10px;
+        width: 250px;
+        height: 180px;
+        .fill {
+          p {
+            margin: 0;
+            padding: 10px;
+          }
+          font-size: 20px;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bold;
+          display: none;
+          position: relative;
+          margin: 0;
+          background: url(../img/portfolio/plus.png) rgba(252, 99, 94, 0.78);
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        &:hover .fill {
+          cursor: pointer;
+          display: block;
+        }
+      }
+    }
+    .arrowDown {
+      margin-top: 70px;
+    }
+  }
+  .team {
+    padding: 50px 120px 30px;
+    background: #f2f2f2;
+    color: @grey;
+    h2 {
+      margin: 0 auto;
+      .clH2;
+    }
+    div {
+      display: flex;
+      justify-content: space-around;
+      .people {
+        flex-direction: column;
+        align-items: center;
+        img {
+          margin: 50px auto 20px;
+        }
+        h4 {
+          margin: 0 auto 20px;
+          font-size: 28px;
+          span {
+            color: @red;
+          }
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .social_nets {
+          flex-direction: row;
+          a {
+            font-size: 10px;
+            color: #565656;
+            &:hover {
+              color: @grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
