@@ -65,7 +65,7 @@ body {
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  background: #524134;
+  background: white;
 }
 body a.arrowDown {
   margin: 0 auto;
@@ -124,7 +124,7 @@ body header nav > a img {
   vertical-align: middle;
 }
 body header nav .logo:hover img {
-  opacity: 0.7;
+  opacity: .7;
 }
 body header nav menu {
   display: flex;
@@ -569,4 +569,3 @@ body .team div .people .social_nets a {
 body .team div .people .social_nets a:hover {
   color: #868686;
 }
-/*# sourceMappingURL=main.css.map */
