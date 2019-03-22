@@ -5,8 +5,9 @@
 }
 
 .clWidth {
-  width: 100%;
   max-width: 1260px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .clH1 {
@@ -49,9 +50,10 @@
 }
 
 .weDoContent {
+  max-width: 1260px;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
   .left {
     h3 {
       margin-bottom: 30px;
@@ -76,7 +78,7 @@
 }
 
 body {
-  .clWidth;
+  max-width: 100%;
   margin: 0 auto;
   background: white;
   a.arrowDown { //будем использовать в разных местах - поместили это вверху;
@@ -113,10 +115,11 @@ body {
   }
   header {
     background: url("../img/background.png") no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 600px;
-    .clWidth;
+    max-width: 100%;
     justify-content: space-around;
     nav {
       display: flex;
@@ -172,9 +175,9 @@ body {
     }
   }
   section#receive {
+    .clWidth;
     margin-top: 0;
     text-align: center;
-    background: white;
     padding: 60px 100px 20px 100px;
     color: @grey;
     h2 {
@@ -207,6 +210,7 @@ body {
     margin-top: 0;
     padding: 90px 90px 10px 90px;
     background: url("../img/expand.png") no-repeat;
+    background-size: cover;
     text-align: center;
     .frame_ramka {
       height: 360px;
@@ -221,9 +225,11 @@ body {
     }
   }
   .ourProcess {
-    text-align: center;
-    background: white;
+    max-width: 1260px;
+    margin: 0 auto;
     padding: 40px 210px 15px 210px;
+    box-sizing: border-box;
+    text-align: center;
     color: @grey;
     h2 {
       margin: 0 auto 20px;
@@ -235,6 +241,7 @@ body {
       font-size: 20px;
     }
     .steps {
+      .clWidth;
       height: 560px;
       margin-bottom: 10px;
       display: flex;
@@ -264,7 +271,7 @@ body {
     }
   }
   .weDo1, .weDo3 {
-    padding: 50px 160px 15px 160px;
+    padding: 50px 200px 15px 200px;
     background: #f2f2f2;
     color: @grey;
     h2 {
@@ -282,8 +289,7 @@ body {
     }
   }
   .weDo2 {
-    padding: 100px 160px 15px 160px;
-    background: white;
+    padding: 100px 200px 15px 200px;
     color: @grey;
     .content {
       .weDoContent;
@@ -308,7 +314,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: white;
     h2 {
       margin-bottom: 40px;
       color: @grey;
@@ -340,6 +345,7 @@ body {
     }
     .container-filter {
       width: 100%;
+      max-width: 1260px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -394,7 +400,7 @@ body {
     }
   }
   .team {
-    padding: 50px 120px 30px;
+    padding: 50px 200px 30px;
     background: #f2f2f2;
     color: @grey;
     h2 {
